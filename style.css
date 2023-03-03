@@ -14,12 +14,37 @@ header {
   height: 4rem;
   font-size: 2rem;
 }
-
+.logo {
+  margin: 0.5rem;
+  position: absolute;
+  width: 6rem;
+  transition: 1s;
+}
+.logo:hover {
+  transition-duration: 1s;
+  scale: 1.3;
+}
 .titulo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
+  color: rgb(18, 187, 117);
+  text-shadow: -0.5rem 0rem 0.5rem rgb(0, 0, 0);
+}
+.carrinho {
+  position: absolute;
+  right: 9rem;
+  top: 2rem;
+  width: 2.5rem;
+  align-items: center;
+  display: flex;
+  transition: 1s;
+}
+.carrinho:hover {
+  transition-duration: 1s;
+  cursor: pointer;
+  scale: 1.2;
 }
 main {
   width: 100vw;
@@ -91,9 +116,10 @@ main {
   transition: 1.5s;
   color: rgb(0, 0, 0);
   font-size: 1.1rem;
+  box-shadow: -0.5rem 0rem 1rem 0rem;
 }
 .caixa1:hover {
-  transition: 1.5s;
+  transition-duration: 1s;
   scale: 1.1;
 }
 
@@ -162,14 +188,15 @@ main {
   transition: 1.5s;
   color: rgb(0, 0, 0);
   font-size: 1.1rem;
+  box-shadow: -0.5rem 0rem 1rem 0rem;
 }
 .caixa2:hover {
-  transition: 1.5s;
+  transition-duration: 1s;
   scale: 1.1;
 }
 .caixa2 button:hover {
-    scale: 1.1;
-  }
+  scale: 1.1;
+}
 .caixasGeral3 {
   flex-wrap: wrap;
   display: flex;
@@ -186,7 +213,7 @@ main {
   margin-left: 2rem;
 }
 .imgPizza {
-  width: 12rem;
+  width: 12.1rem;
   justify-content: center;
   margin-left: 2rem;
 }
@@ -228,14 +255,15 @@ main {
   transition: 1.5s;
   color: rgb(0, 0, 0);
   font-size: 1.1rem;
+  box-shadow: -0.5rem 0rem 1rem 0rem;
 }
 .caixa3:hover {
-  transition: 1.5s;
+  transition-duration: 1s;
   scale: 1.1;
 }
 .caixa3 button:hover {
-    scale: 1.1;
-  }
+  scale: 1.1;
+}
 
 footer {
   display: flex;
@@ -246,3 +274,5 @@ footer {
   height: 10vh;
   color: rgb(0, 0, 0);
 }
+
+
