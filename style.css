@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+header {
+  background-color: rgba(48, 165, 201, 0.5);
+  width: 100vw;
+  height: 4rem;
+  font-size: 1.5rem;
+}
+
+.titulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main {
+  width: 100vw;
+  height: 85vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.caixasGeral {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.caixasGeral P {
+  display: flex;
+  justify-content: center;
+}
+.imgpocao {
+  width: 13rem;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.imgSus {
+  width: 13.5rem;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.imgEstrela {
+  width: 14rem;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.imgCerejinha {
+  width: 13.5rem;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.imgFlaeron {
+  width: 15.2rem;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.esgotado {
+  background-color: red !important ;
+}
+.caixa1 p {
+  font-size: 1.5rem;
+}
+.caixa1 button {
+  width: 13rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  background-color: blueviolet;
+  transition: 1s;
+  cursor: pointer;
+}
+.caixa1 button:hover {
+  scale: 1.1;
+}
+.caixa1 {
+  background-color: rgba(38, 185, 50, 0.4);
+  height: 17rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  transition: 1.5s;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+}
+.caixa1:hover {
+  transition: 1.5s;
+  scale: 1.1;
+}
+
+.caixasGeral2 {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.caixasGeral2 P {
+  display: flex;
+  justify-content: center;
+}
+.caixasGeral2 P {
+  display: flex;
+  justify-content: center;
+}
+.imgNsei {
+  width: 13.4rem;
+  justify-content: center;
+}
+.imgColumelo {
+  width: 11.5rem;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.imgArvore {
+  width: 11.2rem;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.imgFlor {
+  width: 11.4rem;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.caixa2 p {
+  font-size: 1.5rem;
+}
+.caixa2 button {
+  width: 13rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: blueviolet;
+  transition: 1s;
+  cursor: pointer;
+}
+.caixa2 {
+  background-color: rgba(38, 185, 50, 0.4);
+  height: 17rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  transition: 1.5s;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+}
+.caixa2:hover {
+  transition: 1.5s;
+  scale: 1.1;
+}
+
+.caixasGeral3 {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.caixasGeral3 P {
+  display: flex;
+  justify-content: center;
+}
+.caixasGeral3 P {
+  display: flex;
+  justify-content: center;
+}
+
+.caixa3 p {
+  font-size: 1.5rem;
+}
+.caixa3 button {
+  width: 13rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: blueviolet;
+  transition: 1s;
+  cursor: pointer;
+}
+.caixa3 {
+  background-color: rgba(38, 185, 50, 0.4);
+  height: 17rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  transition: 1.5s;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+}
+.caixa3:hover {
+  transition: 1.5s;
+  scale: 1.1;
+}
+
+footer {
+  display: flex;
+  font-size: 4rem;
+  flex-wrap: wrap;
+  background-color: rgba(48, 165, 201, 0.5);
+  height: 10vh;
+  color: rgb(0, 0, 0);
+}
