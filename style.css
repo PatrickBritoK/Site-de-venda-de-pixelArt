@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
 }
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 header {
   background-color: rgba(48, 165, 201, 0.5);
@@ -14,7 +14,24 @@ header {
   height: 4rem;
   font-size: 2rem;
 }
-
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.sobre {
+  display: flex;
+  position: absolute;
+  left: 30rem;
+  top: 1rem;
+}
+#carrinho-count {
+  font-size: 2rem;
+  position: absolute;
+  right: 7rem;
+  top: 2.5rem;
+  background-color: rgba(147, 25, 172, 0.5);
+  border-radius: 0.7rem;
+}
 .modal {
   display: none;
   position: fixed;
@@ -24,7 +41,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .modal th {
   padding: 2rem;
@@ -44,7 +61,7 @@ header {
 }
 
 .fechar {
-  color: #aaaaaa;
+  color: #000000;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -52,7 +69,7 @@ header {
 
 .fechar:hover,
 .fechar:focus {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -82,6 +99,24 @@ header {
   display: flex;
   margin-top: 2rem;
 }
+.finalizarCompra {
+  position: relative;
+  left: 35rem;
+  top: 1rem;
+  font-size: 1.9rem;
+  width: 13rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: #5f18d1;
+  color: black;
+  cursor: pointer;
+  padding-top: 0.1rem;
+}
+.finalizarCompra:hover {
+  background-color: #270066;
+  color: rgb(223, 215, 215);
+}
 .logo {
   margin: 0.5rem;
   position: absolute;
@@ -107,23 +142,32 @@ header {
 @keyframes tituloCor {
   10% {
     color: rgb(119, 96, 96);
-  } 20% {
+  }
+  20% {
     color: rgb(163, 139, 139);
-  } 30% {
+  }
+  30% {
     color: #3836c5;
-  } 40% {
+  }
+  40% {
     color: #3086c0;
-  } 50% {
+  }
+  50% {
     color: rgb(55, 189, 122);
-  } 60% {
+  }
+  60% {
     color: blueviolet;
-  } 70% {
+  }
+  70% {
     color: crimson;
-  } 80% {
+  }
+  80% {
     color: rgb(168, 157, 6);
-  } 90% {
+  }
+  90% {
     color: rgb(190, 31, 177);
-  } 100% {
+  }
+  100% {
     color: #b60e62;
   }
 }
@@ -159,7 +203,6 @@ header {
 .entrar:hover {
   background-color: white;
   color: black;
-
 }
 main {
   width: 100vw;
@@ -190,6 +233,7 @@ main {
   border: 1px solid black;
   animation-duration: 1s;
   animation-name: modalCarrinho;
+  opacity: 92%;
 }
 
 #mensagemEsgotado .fechar {
@@ -206,7 +250,6 @@ main {
   cursor: pointer;
 }
 /* ------ */
-
 
 #fazerLogin {
   display: none;
@@ -225,31 +268,33 @@ main {
   margin: 8% auto;
   border: 1px solid #000000;
   border-radius: 1rem;
-  width: 50rem;
+  width: 37rem;
   height: 45rem;
   max-width: 600px;
   text-align: center;
   border: 1px solid black;
   font-size: 1.5rem;
   opacity: 92%;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   animation-duration: 1s;
   animation-name: modalCarrinho;
 }
-
+.modal-content-login span:hover {
+  color: white;
+}
 #fazerLogin .fechar {
   color: #000000;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin-left: 47rem;
+  margin-left: 35rem;
 }
 
 #fazerLogin .fechar:hover,
 #fazerLogin .fechar:focus {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -257,7 +302,7 @@ main {
   font-size: 1.9rem;
   display: flex;
   text-align: center;
-  width: 20rem; 
+  width: 20rem;
   height: 2.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -266,7 +311,7 @@ main {
   background-color: #5f18d1;
   color: black;
 }
-.telaLogin::placeholder{
+.telaLogin::placeholder {
   color: black;
 }
 .botaoEntrar {
@@ -274,7 +319,7 @@ main {
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 20rem; 
+  width: 20rem;
   height: 2.5rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
@@ -283,7 +328,11 @@ main {
   background-color: #5f18d1;
   color: black;
   cursor: pointer;
-  
+  padding-top: 0.1rem;
+}
+.botaoEntrar:hover {
+  background-color: #270066;
+  color: white;
 }
 .cadastro {
   font-size: 1.9rem;
@@ -296,8 +345,17 @@ main {
 }
 .senhaEsquecida {
   margin-top: 1rem;
-  font-size: 1.9rem
-  
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: black;
+}
+.imgLogin {
+  width: 11rem;
+  transition: 1s;
+}
+.imgLogin:hover {
+  scale: 1.1;
+  transform: rotateY(360deg);
 }
 .caixasGeral {
   flex-wrap: wrap;
@@ -521,5 +579,4 @@ footer {
   height: 10vh;
   color: rgb(0, 0, 0);
 }
-
 

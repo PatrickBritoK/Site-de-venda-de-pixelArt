@@ -15,35 +15,41 @@
 <body>
     <header>
         <a href="http://127.0.0.1:5500/"><img class="logo" src="Assets/moedinha.png"></a>
+        <a class="sobre" href="#">Sobre</a>
         <h1 class="titulo">Lojinha de PixelArt</h1>
         <img class="carrinho" src="Assets/carrinho-de-compras.png" onclick="abrirModal()">
+        <span id="carrinho-count">0</span>
+
         <button class="entrar" onclick="abrirlogin()">Entrar</button>
         <div id="modal" class="modal">
             <div class="modal-content">
-              <span class="fechar" onclick="fecharModal()">&times;</span>
-              <h2>Seu carrinho:</h2>
-              <table id="carrinhoCompras">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Preço</th>
-                        <th>Quantidade</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-                <tfoot>
-                    <tr>
-                        <td class="precoTotal" colspan="3">Total: R$  <span id="precoTotal" >0.0</span></td>
-                    </tr>
-                  </tfoot>
-              </table>
+                <span class="fechar" onclick="fecharModal()">&times;</span>
+                <h2>Seu carrinho:</h2>
+                <table id="carrinhoCompras">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="precoTotal" colspan="3">Total: R$ <span id="precoTotal">0.0</span></td>
+                            <td><button class="finalizarCompra">Finalizar Compra</button></td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
             </div>
-          </div>
+        </div>
     </header>
-    
-    <main>         
+
+    <main>
+
         <body>
-            
+
             <div id="mensagemEsgotado" class="modal">
                 <div class="modal-content">
                     <span class="fechar" onclick="fecharMensagemEsgotado()">&times;</span>
@@ -52,7 +58,7 @@
                     <img src="Assets/gatoTriste.png" style="width: 10rem;">
                 </div>
             </div>
-            
+
             <div id="fazerLogin" class="modalLogin">
                 <div class="modal-content-login">
                     <span class="fechar" onclick="fecharLogin()">&times;</span>
@@ -62,12 +68,13 @@
                     <button class="botaoEntrar">Entrar</button>
                     <b>Ou</b> <br>
                     <button class="cadastro">Cadastre-se</button>
-                    <a class="senhaEsquecida" href="#"><b >esqueceu a senha?</b></a>
+                    <a class="senhaEsquecida" href="#"><b>esqueceu a senha?</b></a>
+                    <img class="imgLogin" src="/Assets/cerejaRosa.png" alt="">
                 </div>
             </div>
         </body>
-        
-        
+
+
         <div class="caixasGeral">
             <div class="caixa1">
                 <p class="produto">Suporte de Poções</p>
@@ -80,16 +87,16 @@
                 <p class="produto">SUS</p>
                 <img class="imgSus" src="Assets/SUS.png">
                 <p class="preço">Preço: R$14,98</p>
-                <button  onclick="adicionarAoCarrinho('sus', '14,98')">Adicionar ao carrinho</button>
+                <button onclick="adicionarAoCarrinho('sus', '14,98')">Adicionar ao carrinho</button>
             </div>
-            
+
             <div class="caixa1">
                 <p class="produto">Estrela do mario</p>
                 <img class="imgEstrela" src="Assets/EstrelaMario.png">
                 <p class="preço">Preço: R$888</p>
                 <button onclick="adicionarAoCarrinho('Estrela do Mario','888')">Adicionar ao carrinho</button>
             </div>
-            
+
             <div class="caixa1">
                 <p class="produto">Cerejinha</p>
                 <img class="imgCerejinha" src="Assets/cerejinha.png">
@@ -112,14 +119,14 @@
                 <p class="preço">Preço: R$20,36</p>
                 <button onclick="adicionarAoCarrinho('Efeito','20,36')">Adicionar ao carrinho</button>
             </div>
-            
+
             <div class="caixa2">
-                <p class="produto">cogumelo do mario</p>
+                <p class="produto">Cogumelo do mario</p>
                 <img class="imgColumelo" src="Assets/Columelo.png">
                 <p class="preço">Preço: R$---</p>
                 <button class="esgotado" onclick="exibirMensagemEsgotado()">Esgotado</button>
             </div>
-            
+
             <div class="caixa2">
                 <p class="produto">Arvore</p>
                 <img class="imgArvore" src="Assets/arvore.png">
@@ -183,7 +190,7 @@
     <footer>
         <p>Todas as pixel arts serão ajustadas de acordo com a preferencia do cliente.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src=" script.js"></script>
 </body>
 
 </html>
