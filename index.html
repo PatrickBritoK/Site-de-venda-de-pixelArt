@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Assets/ceu.png" type="image/x-icon">
     <title>Lojinha de PixelArt | Home</title>
 </head>
 
 <body>
     <header>
-        <a href=""><img class="logo" src="Assets/moedinha.png"></a>
+        <a href="http://127.0.0.1:5500/"><img class="logo" src="Assets/moedinha.png"></a>
         <h1 class="titulo">Lojinha de PixelArt</h1>
         <img class="carrinho" src="Assets/carrinho-de-compras.png" onclick="abrirModal()">
-        <button class="entrar">Entrar</button>
+        <button class="entrar" onclick="abrirlogin()">Entrar</button>
         <div id="modal" class="modal">
             <div class="modal-content">
               <span class="fechar" onclick="fecharModal()">&times;</span>
@@ -41,7 +42,31 @@
     </header>
     
     <main>         
-      
+        <body>
+            
+            <div id="mensagemEsgotado" class="modal">
+                <div class="modal-content">
+                    <span class="fechar" onclick="fecharMensagemEsgotado()">&times;</span>
+                    <h2>Produto esgotado</h2>
+                    <p>Desculpe, este produto está esgotado no momento.</p>
+                    <img src="Assets/gatoTriste.png" style="width: 10rem;">
+                </div>
+            </div>
+            
+            <div id="fazerLogin" class="modalLogin">
+                <div class="modal-content-login">
+                    <span class="fechar" onclick="fecharLogin()">&times;</span>
+                    <h2>Acessar</h2>
+                    <input class="telaLogin" type="email" placeholder="Digite seu email">
+                    <input class="telaLogin" type="password" placeholder="Digite sua senha">
+                    <button class="botaoEntrar">Entrar</button>
+                    <b>Ou</b> <br>
+                    <button class="cadastro">Cadastre-se</button>
+                    <a class="senhaEsquecida" href="#"><b >esqueceu a senha?</b></a>
+                </div>
+            </div>
+        </body>
+        
         
         <div class="caixasGeral">
             <div class="caixa1">
@@ -76,7 +101,7 @@
                 <p class="produto">Flaeron</p>
                 <img class="imgFlaeron" src="Assets/Flareon.png">
                 <p>Preço:---</p>
-                <button class="esgotado">Esgotado</button>
+                <button class="esgotado" onclick="exibirMensagemEsgotado()">Esgotado</button>
             </div>
 
         </div>
@@ -92,7 +117,7 @@
                 <p class="produto">cogumelo do mario</p>
                 <img class="imgColumelo" src="Assets/Columelo.png">
                 <p class="preço">Preço: R$---</p>
-                <button class="esgotado">Esgotado</button>
+                <button class="esgotado" onclick="exibirMensagemEsgotado()">Esgotado</button>
             </div>
             
             <div class="caixa2">
@@ -136,7 +161,7 @@
                 <p class="produto">Miau</p>
                 <img class="imgMiau" src="Assets/miau.png">
                 <p>Preço:---</p>
-                <button class="esgotado">Esgotado</button>
+                <button class="esgotado" onclick="exibirMensagemEsgotado()">Esgotado</button>
             </div>
 
             <div class="caixa3">

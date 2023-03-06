@@ -52,3 +52,19 @@ function removerDoCarrinho(nome, quantidade) {
   }
   atualizarCarrinho();
 }
+
+//Mensagem de esgotado
+function exibirMensagemEsgotado() {
+    document.getElementById("mensagemEsgotado").style.display = "block";
+}
+function fecharMensagemEsgotado() {
+    document.getElementById("mensagemEsgotado").style.display = "none";
+}
+
+
+function abrirlogin() {
+    document.getElementById("fazerLogin").style.display = "block";
+}
+function fecharLogin() {
+    document.getElementById("fazerLogin").style.display = "none";
+}
