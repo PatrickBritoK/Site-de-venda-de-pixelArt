@@ -5,120 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <title>Mercado</title>
+    <link rel="shortcut icon" href="Assets/ceu.png" type="image/x-icon">
+    <title>Lojinha de PixelArt | Home</title>
 </head>
 
 <body>
     <header>
         <a href=""><img class="logo" src="Assets/moedinha.png"></a>
         <h1 class="titulo">Lojinha de PixelArt</h1>
-        <img class="carrinho" src="Assets/carrinho-de-compras.png">
+        <img class="carrinho" src="Assets/carrinho-de-compras.png" onclick="abrirModal()">
+        <button class="entrar">Entrar</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="fechar" onclick="fecharModal()">&times;</span>
+              <h2>Seu carrinho:</h2>
+              <table id="carrinhoCompras">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td class="precoTotal" colspan="3">Total: R$  <span id="precoTotal" >0.0</span></td>
+                    </tr>
+                  </tfoot>
+              </table>
+            </div>
+          </div>
     </header>
-
-    <main>
+    
+    <main>         
+      
+        
         <div class="caixasGeral">
             <div class="caixa1">
-                <p>Suporte de Poções</p>
-                <img class="imgpocao" src="Assets/suporte de poçoes.png" alt="">
-                <p>Preço: R$987</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">Suporte de Poções</p>
+                <img class="imgpocao" src="Assets/suporte de poçoes.png">
+                <p class="preço">Preço: R$987</p>
+                <button onclick="adicionarAoCarrinho('suporte de poções', '987',)">Adicionar ao carrinho</button>
             </div>
+
             <div class="caixa1">
-                <p>SUS</p>
-                <img class="imgSus" src="Assets/SUS.png" alt="">
-                <p>Preço: R$14,98</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">SUS</p>
+                <img class="imgSus" src="Assets/SUS.png">
+                <p class="preço">Preço: R$14,98</p>
+                <button  onclick="adicionarAoCarrinho('sus', '14,98')">Adicionar ao carrinho</button>
             </div>
+            
             <div class="caixa1">
-                <p>Estrela do mario</p>
-                <img class="imgEstrela" src="Assets/EstrelaMario.png" alt="">
-                <p>Preço: R$888</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">Estrela do mario</p>
+                <img class="imgEstrela" src="Assets/EstrelaMario.png">
+                <p class="preço">Preço: R$888</p>
+                <button onclick="adicionarAoCarrinho('Estrela do Mario','888')">Adicionar ao carrinho</button>
             </div>
+            
             <div class="caixa1">
-                <p>Cerejinha</p>
-                <img class="imgCerejinha" src="Assets/cerejinha.png" alt="">
-                <p>Preço: R$3</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">Cerejinha</p>
+                <img class="imgCerejinha" src="Assets/cerejinha.png">
+                <p class="preço">Preço: R$3</p>
+                <button onclick="adicionarAoCarrinho('Cerejinha','3')">Adicionar ao carrinho</button>
             </div>
+
             <div class="caixa1">
-                <p>Flaeron</p>
-                <img class="imgFlaeron" src="Assets/Flareon.png" alt="">
+                <p class="produto">Flaeron</p>
+                <img class="imgFlaeron" src="Assets/Flareon.png">
                 <p>Preço:---</p>
                 <button class="esgotado">Esgotado</button>
             </div>
+
         </div>
         <div class="caixasGeral2">
             <div class="caixa2">
-                <p>Efeito</p>
-                <img class="imgNsei" src="Assets/nsei o que é.png" alt="">
-                <p>Preço: R$20,36</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">Efeito</p>
+                <img class="imgNsei" src="Assets/nsei o que é.png">
+                <p class="preço">Preço: R$20,36</p>
+                <button onclick="adicionarAoCarrinho('Efeito','20,36')">Adicionar ao carrinho</button>
             </div>
+            
             <div class="caixa2">
-                <p>cogumelo do mario</p>
-                <img class="imgColumelo" src="Assets/Columelo.png" alt="">
-                <p>Preço: R$---</p>
+                <p class="produto">cogumelo do mario</p>
+                <img class="imgColumelo" src="Assets/Columelo.png">
+                <p class="preço">Preço: R$---</p>
                 <button class="esgotado">Esgotado</button>
             </div>
+            
             <div class="caixa2">
-                <p>Arvore</p>
-                <img class="imgArvore" src="Assets/arvore.png" alt="">
-                <p>Preço: R$93,21</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">Arvore</p>
+                <img class="imgArvore" src="Assets/arvore.png">
+                <p class="preço">Preço: R$93,21</p>
+                <button onclick="adicionarAoCarrinho('Arvore','93,21')">Adicionar ao carrinho</button>
             </div>
+
             <div class="caixa2">
-                <p>Florzinha</p>
-                <img class="imgFlor" src="Assets/florzinha.png" alt="">
-                <p>Preço: R$53.01</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">Florzinha</p>
+                <img class="imgFlor" src="Assets/florzinha.png">
+                <p class="preço">Preço: R$53,01</p>
+                <button onclick="adicionarAoCarrinho('Florzinha','53,01')">Adicionar ao carrinho</button>
             </div>
+
             <div class="caixa2">
                 <p>???</p>
-                <img class="imgBonnie" src="Assets/bonnie.png" alt="">
+                <img class="imgBonnie" src="Assets/bonnie.png">
                 <p>Preço: R$???</p>
                 <button class="estranho">???</button>
             </div>
+
         </div>
         <div class="caixasGeral3">
             <div class="caixa3">
-                <p>Rayquaza</p>
-                <img class="imgRayquaza" src="Assets/Rayquaza.png" alt="">
-                <p>Preço: R$8,000</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="produto">Rayquaza</p>
+                <img class="imgRayquaza" src="Assets/Rayquaza.png">
+                <p class="preço">Preço: R$8,000</p>
+                <button onclick="adicionarAoCarrinho('Rayquaza','8,000')">Adicionar ao carrinho</button>
             </div>
+
             <div class="caixa3">
-                <p>Pizza</p>
+                <p class="produto">Pizza</p>
                 <img class="imgPizza" src="Assets/pizza.png">
-                <p>Preço: R$10,50</p>
-                <button>Adicionar ao carrinho</button>
+                <p class="preço">Preço: R$10,50</p>
+                <button onclick="adicionarAoCarrinho('Pizza','10,50')">Adicionar ao carrinho</button>
             </div>
+
             <div class="caixa3">
-                <p>Miau</p>
+                <p class="produto">Miau</p>
                 <img class="imgMiau" src="Assets/miau.png">
                 <p>Preço:---</p>
                 <button class="esgotado">Esgotado</button>
             </div>
+
             <div class="caixa3">
-                <p>Polvinho</p>
+                <p class="produto">Polvinho</p>
                 <img class="imgPolvo" src="Assets/polvinho.png">
                 <p>Preço: R$109,99</p>
-                <button>Adicionar ao carrinho</button>
+                <button onclick="adicionarAoCarrinho('Polvinho','109,99')">Adicionar ao carrinho</button>
             </div>
+
             <div class="caixa3">
-                <p>Balão</p>
+                <p class="produto">Balão</p>
                 <img class="imgBalao" src="Assets/balao.png">
+
                 <p>Preço: R$19,99</p>
-                <button>Adicionar ao carrinho</button>
+                <button onclick="adicionarAoCarrinho('Balão','19,99')"">Adicionar ao carrinho</button>
             </div>
         </div>
     </main>
     <footer>
         <p>Todas as pixel arts serão ajustadas de acordo com a preferencia do cliente.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
