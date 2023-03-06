@@ -580,3 +580,20 @@ footer {
   color: rgb(0, 0, 0);
 }
 
+@media screen and (min-width:260px) and (max-width:340px) {
+  html {
+    overflow: scroll;
+  }
+  header {
+    width: 34.2rem;
+  }
+  main {
+    background-color: #97D2E4;
+    height: 180rem;
+    width: 34.2rem;
+  }
+
+  footer {
+    width: 34.2rem;
+  }
+}
