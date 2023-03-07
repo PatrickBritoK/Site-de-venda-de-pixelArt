@@ -580,7 +580,7 @@ footer {
   color: rgb(0, 0, 0);
 }
 
-@media screen and (min-width:260px) and (max-width:340px) {
+@media screen and (min-width: 260px) and (max-width: 340px) {
   html {
     overflow: scroll;
   }
@@ -588,8 +588,8 @@ footer {
     width: 34.2rem;
   }
   main {
-    background-color: #97D2E4;
-    height: 180rem;
+    background-color: #97d2e4;
+    height: 170rem;
     width: 34.2rem;
   }
   .logo {
@@ -597,7 +597,7 @@ footer {
   }
   .titulo {
     font-size: 3rem;
-    padding-right: 10rem
+    padding-right: 10rem;
   }
   .sobre {
     display: none;
@@ -636,17 +636,18 @@ footer {
     padding-left: 1rem;
   }
   .imgEstrela {
-    width: 9.1rem;
+    width: 12.1rem;
     justify-content: center;
-    padding-left: 2rem;
+    padding-right: 1.2rem;
   }
   .imgCerejinha {
-    width: 9.1rem;
+    width: 11.4rem;
     justify-content: center;
     padding-left: 2rem;
+
   }
   .imgFlaeron {
-    width: 9.1rem;
+    width: 12.9rem;
     justify-content: center;
     padding-left: 2rem;
   }
@@ -660,10 +661,73 @@ footer {
   .caixasGeral2 {
     gap: 2rem;
   }
+
+  .imgNsei {
+    width: 11.1rem;
+  }
+  .imgColumelo {
+    width: 7.6rem;
+  }
+  .imgArvore {
+    width: 9.2rem;
+  }
+  .imgFlor {
+    width: 9.4rem;
+  }
+  .imgBonnie {
+    width: 9.3rem;
+  }
+  .caixa2 button {
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    margin-left: -0.1rem;
+    border-radius: 1rem;
+  }
+  .caixa2 {
+    height: 15rem;
+    width: 12rem;
+  }
+ 
   .caixasGeral3 {
     gap: 2rem;
   }
-  
+  .imgRayquaza {
+    width: 9.5rem;
+
+  }
+  .imgPizza {
+    width: 10rem;
+    margin-left: 1rem;
+  }
+  .imgMiau {
+    width: 9.5rem;
+  }
+  .imgPolvo {
+    width: 9.4rem;
+  }
+  .imgBalao {
+    width: 9.4rem;
+  }
+
+  .caixa3 button {
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    margin-left: -0.1rem;
+    border-radius: 1rem;
+  }
+  .caixa3 {
+    height: 15rem;
+    width: 12rem;
+  }
+  #fazerLogin .modal-content-login {
+    width: 30rem;
+    height: 40rem;
+  }
+  #fazerLogin .fechar {
+    margin-left: 28rem;
+  }
   footer {
     width: 34.2rem;
   }
