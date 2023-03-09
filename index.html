@@ -40,7 +40,7 @@
                             <td><button class="finalizarCompra">Finalizar Compra</button></td>
                         </tr>
                     </tfoot>
-                    
+
                 </table>
             </div>
         </div>
@@ -48,144 +48,144 @@
 
     <main>
 
-        <body>
 
-            <div id="mensagemEsgotado" class="modal">
-                <div class="modal-content">
-                    <span class="fechar" onclick="fecharMensagemEsgotado()">&times;</span>
-                    <h2>Produto esgotado</h2>
-                    <p>Desculpe, este produto está esgotado no momento.</p>
-                    <img src="Assets/gatoTriste.png" style="width: 10rem;">
-                </div>
+
+        <div id="mensagemEsgotado" class="modal">
+            <div class="modal-content">
+                <span class="fechar" onclick="fecharMensagemEsgotado()">&times;</span>
+                <h2>Produto esgotado</h2>
+                <p>Desculpe, este produto está esgotado no momento.</p>
+                <img src="Assets/gatoTriste.png" style="width: 10rem;">
             </div>
+        </div>
 
-            <div id="fazerLogin" class="modalLogin">
-                <div class="modal-content-login">
-                    <span class="fechar" onclick="fecharLogin()">&times;</span>
-                    <h2>Acessar</h2>
-                    <input class="telaLogin" type="email" placeholder="Digite seu email">
-                    <input class="telaLogin" type="password" placeholder="Digite sua senha">
-                    <button class="botaoEntrar">Entrar</button>
-                    <b>Ou</b> <br>
-                    <button class="cadastro">Cadastre-se</button>
-                    <a class="senhaEsquecida" href="#"><b>esqueceu a senha?</b></a>
-                    <img class="imgLogin" src="/Assets/cerejaRosa.png" alt="">
-                </div>
+        <div id="fazerLogin" class="modalLogin">
+            <div class="modal-content-login">
+                <span class="fechar" onclick="fecharLogin()">&times;</span>
+                <h2>Acessar</h2>
+                <input class="telaLogin" type="email" placeholder="Digite seu email">
+                <input class="telaLogin" type="password" placeholder="Digite sua senha">
+                <button class="botaoEntrar">Entrar</button>
+                <b>Ou</b> <br>
+                <button class="cadastro">Cadastre-se</button>
+                <a class="senhaEsquecida" href="#"><b>esqueceu a senha?</b></a>
+                <img class="imgLogin" src="/Assets/cerejaRosa.png" alt="">
             </div>
-        </body>
+        </div>
 
 
-        <div class="caixasGeral">
-            <div class="caixa1">
+        <div class="caixaGeral1">
+
+            <div class="caixa">
                 <p class="produto">Suporte de Poções</p>
                 <img class="imgpocao" src="Assets/suporte de poçoes.png">
                 <p class="preço">Preço: R$987</p>
                 <button onclick="adicionarAoCarrinho('suporte de poções', '987',)">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa1">
+            <div class="caixa">
                 <p class="produto">SUS</p>
                 <img class="imgSus" src="Assets/SUS.png">
                 <p class="preço">Preço: R$14,98</p>
                 <button onclick="adicionarAoCarrinho('sus', '14,98')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa1">
+            <div class="caixa">
                 <p class="produto">Estrela do mario</p>
                 <img class="imgEstrela" src="Assets/EstrelaMario.png">
                 <p class="preço">Preço: R$888</p>
                 <button onclick="adicionarAoCarrinho('Estrela do Mario','888')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa1">
+            <div class="caixa">
                 <p class="produto">Cerejinha</p>
                 <img class="imgCerejinha" src="Assets/cerejinha.png">
                 <p class="preço">Preço: R$3</p>
                 <button onclick="adicionarAoCarrinho('Cerejinha','3')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa1">
+            <div class="caixa">
                 <p class="produto">Flaeron</p>
                 <img class="imgFlaeron" src="Assets/Flareon.png">
                 <p>Preço:---</p>
                 <button class="esgotado" onclick="exibirMensagemEsgotado()">Esgotado</button>
             </div>
 
-        </div>
-        <div class="caixasGeral2">
-            <div class="caixa2">
+
+
+            <div class="caixa">
                 <p class="produto">Efeito</p>
                 <img class="imgNsei" src="Assets/nsei o que é.png">
                 <p class="preço">Preço: R$20,36</p>
                 <button onclick="adicionarAoCarrinho('Efeito','20,36')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa2">
+            <div class="caixa">
                 <p class="produto">Cogumelo do mario</p>
                 <img class="imgColumelo" src="Assets/Columelo.png">
                 <p class="preço">Preço: R$---</p>
                 <button class="esgotado" onclick="exibirMensagemEsgotado()">Esgotado</button>
             </div>
 
-            <div class="caixa2">
+            <div class="caixa">
                 <p class="produto">Arvore</p>
                 <img class="imgArvore" src="Assets/arvore.png">
                 <p class="preço">Preço: R$93,21</p>
                 <button onclick="adicionarAoCarrinho('Arvore','93,21')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa2">
+            <div class="caixa">
                 <p class="produto">Florzinha</p>
                 <img class="imgFlor" src="Assets/florzinha.png">
                 <p class="preço">Preço: R$53,01</p>
                 <button onclick="adicionarAoCarrinho('Florzinha','53,01')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa2">
+            <div class="caixa">
                 <p>???</p>
                 <img class="imgBonnie" src="Assets/bonnie.png">
                 <p>Preço: R$???</p>
                 <button class="estranho">???</button>
             </div>
 
-        </div>
-        <div class="caixasGeral3">
-            <div class="caixa3">
+
+
+            <div class="caixa">
                 <p class="produto">Rayquaza</p>
                 <img class="imgRayquaza" src="Assets/Rayquaza.png">
                 <p class="preço">Preço: R$8,000</p>
                 <button onclick="adicionarAoCarrinho('Rayquaza','8,000')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa3">
+            <div class="caixa">
                 <p class="produto">Pizza</p>
                 <img class="imgPizza" src="Assets/pizza.png">
                 <p class="preço">Preço: R$10,50</p>
                 <button onclick="adicionarAoCarrinho('Pizza','10,50')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa3">
+            <div class="caixa">
                 <p class="produto">Miau</p>
                 <img class="imgMiau" src="Assets/miau.png">
                 <p>Preço:---</p>
                 <button class="esgotado" onclick="exibirMensagemEsgotado()">Esgotado</button>
             </div>
 
-            <div class="caixa3">
+            <div class="caixa">
                 <p class="produto">Polvinho</p>
                 <img class="imgPolvo" src="Assets/polvinho.png">
                 <p>Preço: R$109,99</p>
                 <button onclick="adicionarAoCarrinho('Polvinho','109,99')">Adicionar ao carrinho</button>
             </div>
 
-            <div class="caixa3">
+            <div class="caixa">
                 <p class="produto">Balão</p>
                 <img class="imgBalao" src="Assets/balao.png">
 
                 <p>Preço: R$19,99</p>
                 <button onclick="adicionarAoCarrinho('Balão','19,99')"">Adicionar ao carrinho</button>
             </div>
-        </div>
+     </div>
     </main>
     <footer>
         <p>Todas as pixel arts serão ajustadas de acordo com a preferencia do cliente.</p>

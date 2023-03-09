@@ -11,12 +11,13 @@ html {
 header {
   background-color: rgba(48, 165, 201, 0.5);
   width: 100vw;
-  height: 4rem;
+  height: 10vh;
   font-size: 2rem;
 }
 body {
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 .sobre {
   display: flex;
@@ -25,10 +26,11 @@ body {
   top: 1rem;
 }
 #carrinho-count {
+  right: 3%; 
+  top: calc(1rem + 0.5vw);
+  flex-wrap: wrap;
   font-size: 2rem;
   position: absolute;
-  right: 7rem;
-  top: 2.5rem;
   background-color: rgba(147, 25, 172, 0.5);
   border-radius: 0.7rem;
 }
@@ -118,9 +120,9 @@ body {
   color: rgb(223, 215, 215);
 }
 .logo {
-  margin: 0.5rem;
+  margin: 0.5%;
   position: absolute;
-  width: 6rem;
+  width: 3.5%;
   transition: 1s;
 }
 .logo:hover {
@@ -172,28 +174,32 @@ body {
   }
 }
 .carrinho {
+  flex-wrap: wrap;
   position: absolute;
-  right: 9rem;
-  top: 2rem;
+  right: 5%; /* Use uma posição relativa à largura da tela */
+  top: calc(0.5rem + 0.5vw);
   width: 2.5rem;
   align-items: center;
   display: flex;
-  transition: 1s;
+  transition: transform 1s; /* Use a propriedade "transform" para a animação */
 }
 .carrinho:hover {
   transition-duration: 1s;
   cursor: pointer;
   scale: 1.2;
 }
+
 .entrar {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 15rem;
-  top: 2.5rem;
+  right: 10%; /* Use uma posição relativa à largura da tela */
+  top: calc(3rem + 4vw); /* Use uma posição relativa à altura da tela */
+  top: 2%;
   background-color: violet;
-  width: 10rem;
+  width: 8vw; 
   height: 2rem;
   cursor: pointer;
   border: 1px solid black;
@@ -205,8 +211,6 @@ body {
   color: black;
 }
 main {
-  width: 100vw;
-  height: 85vh;
   background-color: rgba(48, 165, 201, 0.5);
 }
 
@@ -357,16 +361,16 @@ main {
   scale: 1.1;
   transform: rotateY(360deg);
 }
-.caixasGeral {
+.caixaGeral1 {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  gap: 5rem;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
-  padding-top: 5rem;
+  cursor: pointer;
 }
-.caixasGeral P {
-  display: flex;
-  justify-content: center;
-}
+
 .imgpocao {
   width: 12.8rem;
   justify-content: center;
@@ -395,10 +399,10 @@ main {
 .esgotado {
   background-color: red !important ;
 }
-.caixa1 p {
+.caixa p {
   font-size: 1.8rem;
 }
-.caixa1 button {
+.caixa button {
   width: 13rem;
   display: flex;
   justify-content: center;
@@ -409,10 +413,10 @@ main {
   transition: 1s;
   cursor: pointer;
 }
-.caixa1 button:hover {
+.caixa button:hover {
   scale: 1.1;
 }
-.caixa1 {
+.caixa {
   background-color: rgba(38, 185, 50, 0.4);
   height: 17rem;
   width: 15rem;
@@ -423,25 +427,11 @@ main {
   font-size: 1.1rem;
   box-shadow: -0.5rem 0rem 1rem 0rem;
 }
-.caixa1:hover {
+.caixa:hover {
   transition-duration: 1s;
   scale: 1.1;
 }
 
-.caixasGeral2 {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 3rem;
-}
-.caixasGeral2 P {
-  display: flex;
-  justify-content: center;
-}
-.caixasGeral2 P {
-  display: flex;
-  justify-content: center;
-}
 .imgNsei {
   width: 13.4rem;
   justify-content: center;
@@ -466,52 +456,12 @@ main {
   justify-content: center;
   margin-left: 2rem;
 }
-.caixa2 p {
-  font-size: 1.8rem;
-}
-.caixa2 button {
-  width: 13rem;
-  display: flex;
-  justify-content: center;
-  margin-left: 1rem;
-  border-radius: 10px;
-  font-size: 1.3rem;
-  background-color: blueviolet;
-  transition: 1s;
-  cursor: pointer;
-}
+
 .estranho {
   background-color: black !important;
   color: red;
 }
-.caixa2 {
-  background-color: rgba(38, 185, 50, 0.4);
-  height: 17rem;
-  width: 15rem;
-  border-radius: 1rem;
-  border: 1px solid black;
-  transition: 1.5s;
-  color: rgb(0, 0, 0);
-  font-size: 1.1rem;
-  box-shadow: -0.5rem 0rem 1rem 0rem;
-}
-.caixa2:hover {
-  transition-duration: 1s;
-  scale: 1.1;
-}
-.caixa2 button:hover {
-  scale: 1.1;
-}
-.caixasGeral3 {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 3rem;
-}
-.caixasGeral3 P {
-  display: flex;
-  justify-content: center;
-}
+
 .imgRayquaza {
   width: 11.4rem;
   justify-content: center;
@@ -537,38 +487,6 @@ main {
   justify-content: center;
   margin-left: 2rem;
 }
-.caixa3 p {
-  font-size: 1.8rem;
-}
-.caixa3 button {
-  width: 13rem;
-  display: flex;
-  justify-content: center;
-  margin-left: 1rem;
-  border-radius: 10px;
-  font-size: 1.3rem;
-  background-color: blueviolet;
-  transition: 1s;
-  cursor: pointer;
-}
-.caixa3 {
-  background-color: rgba(38, 185, 50, 0.4);
-  height: 17rem;
-  width: 15rem;
-  border-radius: 1rem;
-  border: 1px solid black;
-  transition: 1.5s;
-  color: rgb(0, 0, 0);
-  font-size: 1.1rem;
-  box-shadow: -0.5rem 0rem 1rem 0rem;
-}
-.caixa3:hover {
-  transition-duration: 1s;
-  scale: 1.1;
-}
-.caixa3 button:hover {
-  scale: 1.1;
-}
 
 footer {
   display: flex;
@@ -576,574 +494,113 @@ footer {
   font-size: 2rem;
   background-color: rgba(48, 165, 201, 0.5);
   width: 100%;
-  height: 10vh;
+  min-height: 10rem; 
+  flex-shrink: 0; /* Impede que o footer seja reduzido a ponto de ficar ilegível */
   color: rgb(0, 0, 0);
 }
 
-@media screen and (min-width: 260px) and (max-width: 340px) {
+footer p {
+  padding-top: 5rem; 
+  margin-bottom: 0; 
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+@media screen and (min-width:10px) and (max-width:1000px){
   html {
     overflow: scroll;
+    overflow-x: hidden;
   }
-  header {
-    width: 34.2rem;
-  }
-  main {
-    background-color: #97d2e4;
-    height: 170rem;
-    width: 34.2rem;
-  }
+}
+
+@media screen and (min-width:300px) and (max-width:409px) {
   .logo {
     display: none;
   }
   .titulo {
+    justify-content: start;
     font-size: 3rem;
-    padding-right: 10rem;
-  }
-  .sobre {
-    display: none;
-  }
-  .carrinho {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-  #carrinho-count {
-    position: absolute;
-    right: -0.5rem;
-    top: 1.1rem;
-    font-size: 2.5rem;
-  }
-  .entrar {
-    font-size: 2rem;
-    right: 10rem;
-    top: 4.5rem;
-  }
-  .caixasGeral {
-    gap: 2rem;
-  }
-  .caixa1 {
-    height: 15rem;
-    width: 12rem;
-  }
-  .imgpocao {
-    width: 9.2rem;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-  .imgSus {
-    width: 10.5rem;
-    justify-content: center;
-    padding-left: 1rem;
-  }
-  .imgEstrela {
-    width: 12.1rem;
-    justify-content: center;
-    padding-right: 1.2rem;
-  }
-  .imgCerejinha {
-    width: 11.4rem;
-    justify-content: center;
-    padding-left: 2rem;
-
-  }
-  .imgFlaeron {
-    width: 12.9rem;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-  .caixa1 button {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    margin-left: -0.1rem;
-    border-radius: 1rem;
-  }
-  .caixasGeral2 {
-    gap: 2rem;
-  }
-
-  .imgNsei {
-    width: 11.1rem;
-  }
-  .imgColumelo {
-    width: 7.6rem;
-  }
-  .imgArvore {
-    width: 9.2rem;
-  }
-  .imgFlor {
-    width: 9.4rem;
-  }
-  .imgBonnie {
-    width: 9.3rem;
-  }
-  .caixa2 button {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    margin-left: -0.1rem;
-    border-radius: 1rem;
-  }
-  .caixa2 {
-    height: 15rem;
-    width: 12rem;
-  }
- 
-  .caixasGeral3 {
-    gap: 2rem;
-  }
-  .imgRayquaza {
-    width: 9.5rem;
-
-  }
-  .imgPizza {
-    width: 10rem;
     margin-left: 1rem;
   }
-  .imgMiau {
-    width: 9.5rem;
+  .sobre {
+    display: none;
   }
-  .imgPolvo {
-    width: 9.4rem;
+  .caixaGeral1 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    gap: 3rem;
   }
-  .imgBalao {
-    width: 9.4rem;
+  .carrinho {
+    right: 10%;
   }
-
-  .caixa3 button {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    margin-left: -0.1rem;
-    border-radius: 1rem;
+  #carrinho-count {
+    right: 6%; 
   }
-  .caixa3 {
-    height: 15rem;
-    width: 12rem;
-  }
-  #fazerLogin .modal-content-login {
-    width: 30rem;
-    height: 40rem;
-  }
-  #fazerLogin .fechar {
-    margin-left: 28rem;
-  }
-  footer {
-    width: 34.2rem;
+  .entrar {
+    right: 40%; /* Use uma posição relativa à largura da tela */
+    width: 20vw; 
   }
 }
-
-@media screen and (min-width: 341px) and (max-width: 400px) {
-  html {
-    overflow: scroll;
-  }
-  header {
-    width: 40rem;
-  }
-  main {
-    background-color: #97d2e4;
-    height: 175rem;
-    width: 40rem;
-  }
+@media screen and (min-width:410px) and (max-width:609px) {
   .logo {
     display: none;
   }
   .titulo {
+    justify-content: start;
     font-size: 3rem;
-    padding-right: 10rem;
+    margin-left: 1rem;
   }
   .sobre {
     display: none;
   }
+  .caixaGeral1 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    gap: 3rem;
+  }
   .carrinho {
-    position: absolute;
-    right: 6rem;
-    top: 1rem;
+    right: 10%;
   }
   #carrinho-count {
-    position: absolute;
-    right: 4rem;
-    top: 1.1rem;
-    font-size: 2.5rem;
+    right: 6%; 
   }
   .entrar {
-    display: flex;
-    font-size: 2rem;
-    right: 13rem;
-    top: 4.5rem;
-  }
-  .caixasGeral {
-    gap: 2rem;
-  }
-  .caixa1 {
-    height: 16rem;
-    width: 13rem;
-  }
-  .imgpocao {
-    width: 11.7rem;
-    padding-left: 2rem;
-  }
-  .imgSus {
-    width: 11.4rem;
-    padding-left: 1rem;
-  }
-  .imgEstrela {
-    width: 13.2rem;
-    padding-right: 1.2rem;
-  }
-  .imgCerejinha {
-    width: 12.4rem;
-    padding-left: 2rem;
-
-  }
-  .imgFlaeron {
-    width: 14.1rem;
-    padding-left: 2rem;
-  }
-  .caixa1 button {
-    width: 12rem;
-    margin-left: 0.4rem;
-    border-radius: 1rem;
-  }
-  .caixasGeral2 {
-    gap: 2rem;
-  }
-
-  .imgNsei {
-    width: 12.3rem;
-  }
-  .imgColumelo {
-    width: 10.4rem;
-  }
-  .imgArvore {
-    width: 10.2rem;
-  }
-  .imgFlor {
-    width: 10.4rem;
-  }
-  .imgBonnie {
-    width: 10.4rem;
-  }
-  .caixa2 button {
-    width: 12rem;
-    margin-left: 0.4rem;
-    border-radius: 1rem;
-  }
-  .caixa2 {
-    height: 16rem;
-    width: 13rem;
-  }
- 
-  .caixasGeral3 {
-    gap: 2rem;
-  }
-  .imgRayquaza {
-    width: 10.4rem;
-
-  }
-  .imgPizza {
-    width: 11rem;
-  }
-  .imgMiau {
-    width: 10.5rem;
-  }
-  .imgPolvo {
-    width: 10.4rem;
-  }
-  .imgBalao {
-    width: 10.4rem;
-  }
-
-  .caixa3 button {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    margin-left: 0.5rem;
-    border-radius: 1rem;
-  }
-  .caixa3 {
-    height: 16rem;
-    width: 13rem;
-  }
-  footer {
-    width: 40rem;
+    right: 25%; 
+    width: 20vw; 
+    top: 1%;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 443px) {
-  html {
-    overflow: scroll;
-  }
-  header {
-    width: 44.3rem;
-  }
-  main {
-    background-color: #97d2e4;
-    height: 125rem;
-    width: 44.3rem;
-  }
+@media screen and (min-width:610px) and (max-width:809px) {
   .logo {
-    display: none;
+  margin: 0.5%;
+  position: absolute;
+  width: 5%;
+  transition: 1s;
   }
   .titulo {
-    font-size: 3rem;
-    padding-right: 17rem;
+    justify-content: start;
+    font-size: 3.5rem;
+    margin-left: 15%;
   }
   .sobre {
     display: none;
   }
+  .caixaGeral1 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    gap: 3rem;
+  }
   .carrinho {
-    position: absolute;
-    right: 6rem;
-    top: 1rem;
+    right: 10%;
   }
   #carrinho-count {
-    position: absolute;
-    right: 4rem;
-    top: 1.1rem;
-    font-size: 2.5rem;
+    right: 6%; 
   }
   .entrar {
-    display: flex;
-    font-size: 2.5rem;
-    right: 14.5rem;
-    top: 4.5rem;
-    width: 15rem;
-    height: 2rem;
-  }
- 
-  .caixasGeral {
-    gap: 2rem;
-  }
-  .caixa1 {
-    height: 16rem;
-    width: 13rem;
-  }
-  .imgpocao {
-    width: 11.7rem;
-    padding-left: 2rem;
-  }
-  .imgSus {
-    width: 11.4rem;
-    padding-left: 1rem;
-  }
-  .imgEstrela {
-    width: 13.2rem;
-    padding-right: 1.2rem;
-  }
-  .imgCerejinha {
-    width: 12.4rem;
-    padding-left: 2rem;
-
-  }
-  .imgFlaeron {
-    width: 14.1rem;
-    padding-left: 2rem;
-  }
-  .caixa1 button {
-    width: 12rem;
-    margin-left: 0.4rem;
-    border-radius: 1rem;
-  }
-  .caixasGeral2 {
-    gap: 2rem;
-  }
-
-  .imgNsei {
-    width: 12.3rem;
-  }
-  .imgColumelo {
-    width: 10.4rem;
-  }
-  .imgArvore {
-    width: 10.2rem;
-  }
-  .imgFlor {
-    width: 10.4rem;
-  }
-  .imgBonnie {
-    width: 10.4rem;
-  }
-  .caixa2 button {
-    width: 12rem;
-    margin-left: 0.4rem;
-    border-radius: 1rem;
-  }
-  .caixa2 {
-    height: 16rem;
-    width: 13rem;
-  }
- 
-  .caixasGeral3 {
-    gap: 2rem;
-  }
-  .imgRayquaza {
-    width: 10.4rem;
-
-  }
-  .imgPizza {
-    width: 11rem;
-  }
-  .imgMiau {
-    width: 10.5rem;
-  }
-  .imgPolvo {
-    width: 10.4rem;
-  }
-  .imgBalao {
-    width: 10.4rem;
-  }
-
-  .caixa3 button {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    margin-left: 0.5rem;
-    border-radius: 1rem;
-  }
-  .caixa3 {
-    height: 16rem;
-    width: 13rem;
-  }
-  footer {
-    width: 44.3rem;
+    right: 25%; 
+    width: 17vw; 
+    top: 1%;
   }
 }
-@media screen and (min-width: 444px) and (max-width: 500px) {
-  html {
-    overflow: scroll;
-  }
-  header {
-    width: 44.3rem;
-  }
-  main {
-    background-color: #97d2e4;
-    height: 125rem;
-    width: 44.3rem;
-  }
-  .logo {
-    display: none;
-  }
-  .titulo {
-    font-size: 3rem;
-    padding-right: 17rem;
-  }
-  .sobre {
-    display: none;
-  }
-  .carrinho {
-    position: absolute;
-    right: 6rem;
-    top: 1rem;
-  }
-  #carrinho-count {
-    position: absolute;
-    right: 4rem;
-    top: 1.1rem;
-    font-size: 2.5rem;
-  }
-  .entrar {
-    display: flex;
-    font-size: 2.5rem;
-    right: 14.5rem;
-    top: 4.5rem;
-    width: 15rem;
-    height: 2rem;
-  }
- 
-  .caixasGeral {
-    gap: 2rem;
-  }
-  .caixa1 {
-    height: 16rem;
-    width: 13rem;
-  }
-  .imgpocao {
-    width: 11.7rem;
-    padding-left: 2rem;
-  }
-  .imgSus {
-    width: 11.4rem;
-    padding-left: 1rem;
-  }
-  .imgEstrela {
-    width: 13.2rem;
-    padding-right: 1.2rem;
-  }
-  .imgCerejinha {
-    width: 12.4rem;
-    padding-left: 2rem;
+@media screen and (min-width:610px) and (max-width:809px) {
 
-  }
-  .imgFlaeron {
-    width: 14.1rem;
-    padding-left: 2rem;
-  }
-  .caixa1 button {
-    width: 12rem;
-    margin-left: 0.4rem;
-    border-radius: 1rem;
-  }
-  .caixasGeral2 {
-    gap: 2rem;
-  }
-
-  .imgNsei {
-    width: 12.3rem;
-  }
-  .imgColumelo {
-    width: 10.4rem;
-  }
-  .imgArvore {
-    width: 10.2rem;
-  }
-  .imgFlor {
-    width: 10.4rem;
-  }
-  .imgBonnie {
-    width: 10.4rem;
-  }
-  .caixa2 button {
-    width: 12rem;
-    margin-left: 0.4rem;
-    border-radius: 1rem;
-  }
-  .caixa2 {
-    height: 16rem;
-    width: 13rem;
-  }
- 
-  .caixasGeral3 {
-    gap: 2rem;
-  }
-  .imgRayquaza {
-    width: 10.4rem;
-
-  }
-  .imgPizza {
-    width: 11rem;
-  }
-  .imgMiau {
-    width: 10.5rem;
-  }
-  .imgPolvo {
-    width: 10.4rem;
-  }
-  .imgBalao {
-    width: 10.4rem;
-  }
-
-  .caixa3 button {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    margin-left: 0.5rem;
-    border-radius: 1rem;
-  }
-  .caixa3 {
-    height: 16rem;
-    width: 13rem;
-  }
-  footer {
-    width: 44.3rem;
-  }
 }
