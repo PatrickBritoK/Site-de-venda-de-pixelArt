@@ -6,7 +6,8 @@
 }
 html {
   font-size: 62.5%;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 header {
   background-color: rgba(48, 165, 201, 0.5);
@@ -19,15 +20,36 @@ body {
   width: 100vw;
   min-height: 100vh;
 }
+.header {
+  padding-top: 2rem;
+  
+}
 .sobre {
+  text-decoration: none;
+  flex-wrap: wrap;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  left: 30rem;
-  top: 1rem;
+  background-color: violet;
+  width: 6vw; 
+  height: 2rem;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  color: rgb(219, 218, 218);
+  right: 32rem;
+  top: 4.5%;
+  border-radius: 0.8rem;
+  height: 2rem;
+}
+.sobre:hover {
+  background-color: rgb(224, 74, 224);
+  color: black;
 }
 #carrinho-count {
   right: 3%; 
-  top: calc(1rem + 0.5vw);
+  top: calc(2rem + 1vw);
   flex-wrap: wrap;
   font-size: 2rem;
   position: absolute;
@@ -177,7 +199,7 @@ body {
   flex-wrap: wrap;
   position: absolute;
   right: 5%; /* Use uma posição relativa à largura da tela */
-  top: calc(0.5rem + 0.5vw);
+  top: calc(1rem + 1.5vw);
   width: 2.5rem;
   align-items: center;
   display: flex;
@@ -197,7 +219,7 @@ body {
   position: absolute;
   right: 10%; /* Use uma posição relativa à largura da tela */
   top: calc(3rem + 4vw); /* Use uma posição relativa à altura da tela */
-  top: 2%;
+  top: 4.5%;
   background-color: violet;
   width: 8vw; 
   height: 2rem;
@@ -362,6 +384,7 @@ main {
   transform: rotateY(360deg);
 }
 .caixaGeral1 {
+  padding-top: 3rem;
   margin-right: 3rem;
   margin-left: 3rem;
   gap: 5rem;
@@ -513,6 +536,7 @@ footer p {
 }
 
 @media screen and (min-width:300px) and (max-width:409px) {
+  
   .logo {
     display: none;
   }

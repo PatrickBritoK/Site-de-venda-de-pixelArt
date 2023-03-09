@@ -14,8 +14,9 @@
 
 <body>
     <header>
+        <div class="header">
         <a href="http://127.0.0.1:5500/"><img class="logo" src="Assets/moedinha.png"></a>
-        <a class="sobre" href="#">Sobre</a>
+        <a class="sobre" href="/Pagina_home/home.html" target="_blank">Home</a>
         <h1 class="titulo">Lojinha de PixelArt</h1>
         <img class="carrinho" src="Assets/carrinho-de-compras.png" onclick="abrirModal()">
         <span id="carrinho-count">0</span>
@@ -44,12 +45,10 @@
                 </table>
             </div>
         </div>
+    </div>
     </header>
 
     <main>
-
-
-
         <div id="mensagemEsgotado" class="modal">
             <div class="modal-content">
                 <span class="fechar" onclick="fecharMensagemEsgotado()">&times;</span>
@@ -69,7 +68,7 @@
                 <b>Ou</b> <br>
                 <button class="cadastro">Cadastre-se</button>
                 <a class="senhaEsquecida" href="#"><b>esqueceu a senha?</b></a>
-                <img class="imgLogin" src="/Assets/cerejaRosa.png" alt="">
+                <img class="imgLogin" src="./Assets/cerejaRosa.png" alt="">
             </div>
         </div>
 
