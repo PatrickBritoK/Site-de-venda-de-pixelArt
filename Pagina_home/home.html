@@ -15,14 +15,30 @@
 <body>
     <header>
         <div class="header">
-        <a href="http://127.0.0.1:5500/"><img class="logo" src="/Pagina_loja/Assets/moedinha.png"></a>
-        <a class="sobre" href="/Pagina_loja/index.html" target="_blank">Loja</a>
-        
+            <h1 class="titulo">PixelArts</h1>
+        <!-- <a href="http://127.0.0.1:5500/"><img class="logo" src="/Pagina_loja/Assets/moedinha.png"></a> -->
+        <a class="loja" href="/Pagina_loja/index.html" target="_blank">Loja</a>
+        <a class="sobre" href="">Sobre</a>
+        <button class="entrar" onclick="abrirlogin()">Entrar</button>
     </div>
     </header>
     <main>
-        <p><h1 class="titulo">PixelArts</h1></p>
-        <div class="caixaTeste">
+
+        <div id="fazerLogin" class="modalLogin">
+            <div class="modal-content-login">
+                <span class="fechar" onclick="fecharLogin()">&times;</span>
+                <h2>Acessar</h2>
+                <input class="telaLogin" type="email" placeholder="Digite seu email">
+                <input class="telaLogin" type="password" placeholder="Digite sua senha">
+                <button class="botaoEntrar">Entrar</button>
+                <b>Ou</b> <br>
+                <button class="cadastro">Cadastre-se</button>
+                <a class="senhaEsquecida" href="#"><b>esqueceu a senha?</b></a>
+                <img class="imgLogin" src="./Assets/cerejaRosa.png" alt="">
+            </div>
+        </div>
+        
+        <div class="caixa1">
 
         </div>
     </main>

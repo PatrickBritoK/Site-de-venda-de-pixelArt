@@ -24,7 +24,7 @@ body {
 .header {
   padding-top: 2rem;
 }
-.sobre {
+.loja {
   text-decoration: none;
   flex-wrap: wrap;
   display: flex;
@@ -39,7 +39,30 @@ body {
   border-radius: 0.8rem;
   color: rgb(219, 218, 218);
   right: 32rem;
-  top: 4.5%;
+  top: 3%;
+  border-radius: 0.8rem;
+  height: 2rem;
+}
+.loja:hover {
+  background-color: rgb(224, 74, 224);
+  color: black;
+}
+.sobre {
+  text-decoration: none;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: violet;
+  width: 6vw;
+  height: 2rem;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  color: rgb(219, 218, 218);
+  right: 45rem;
+  top: 3%;
   border-radius: 0.8rem;
   height: 2rem;
 }
@@ -47,11 +70,50 @@ body {
   background-color: rgb(224, 74, 224);
   color: black;
 }
-.logo {
-  margin: 0.5%;
-  position: absolute;
-  width: 3.5%;
-  transition: 1s;
+.titulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 2%;
+  font-family: "VT323", monospace;
+  color: rgb(140, 21, 156);
+  text-shadow: -0.5rem 0rem 0.5rem rgb(0, 0, 0);
+}
+.titulo:hover {
+  animation: tituloCor 10s infinite;
+  cursor: pointer;
+}
+@keyframes tituloCor {
+  10% {
+    color: rgb(119, 96, 96);
+  }
+  20% {
+    color: rgb(163, 139, 139);
+  }
+  30% {
+    color: #3836c5;
+  }
+  40% {
+    color: #3086c0;
+  }
+  50% {
+    color: rgb(55, 189, 122);
+  }
+  60% {
+    color: blueviolet;
+  }
+  70% {
+    color: crimson;
+  }
+  80% {
+    color: rgb(168, 157, 6);
+  }
+  90% {
+    color: rgb(190, 31, 177);
+  }
+  100% {
+    color: #b60e62;
+  }
 }
 .logo:hover {
   transition-duration: 1s;
@@ -64,10 +126,134 @@ body {
 main {
   background-color: rgba(134, 38, 130, 0.5);
 }
+.caixa1 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  width: 30vw;
+  height: 85vh;
+}
+#fazerLogin {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
+#fazerLogin .modal-content-login {
+  background-color: #3836c5;
+  margin: 8% auto;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+  width: 37rem;
+  height: 45rem;
+  max-width: 600px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  opacity: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 1s;
+  animation-name: modalCarrinho;
+}
+.modal-content-login span:hover {
+  color: white;
+}
+#fazerLogin .fechar {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 35rem;
+}
 
-
-
+#fazerLogin .fechar:hover,
+#fazerLogin .fechar:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.telaLogin {
+  font-size: 1.9rem;
+  display: flex;
+  text-align: center;
+  width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: #5f18d1;
+  color: black;
+}
+.telaLogin::placeholder {
+  color: black;
+}
+.cadastro {
+  font-size: 1.9rem;
+  width: 12rem;
+  height: 2rem;
+  background-color: #5f18d1;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.entrar {
+  font-size: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10%; 
+  top: calc(3rem + 4vw); 
+  top: 3%;
+  background-color: violet;
+  width: 8vw; 
+  height: 2rem;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  color: rgb(219, 218, 218);
+}
+.entrar:hover {
+  background-color: rgb(224, 74, 224);
+  color: black;
+}
+.botaoEntrar {
+  font-size: 1.9rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: #5f18d1;
+  color: black;
+  cursor: pointer;
+  padding-top: 0.1rem;
+}
+.botaoEntrar:hover {
+  background-color: #270066;
+  color: white;
+}
+.senhaEsquecida {
+  margin-top: 1rem;
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: black;
+}
 
 
 
