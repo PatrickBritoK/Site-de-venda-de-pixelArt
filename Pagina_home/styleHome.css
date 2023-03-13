@@ -11,7 +11,7 @@ html {
   overflow-x: hidden;
 }
 header {
-  background-color: rgba(134, 38, 130, 0.5);
+  background-color: rgba(18, 170, 56, 0.7);
   width: 100vw;
   height: 10vh;
   font-size: 2rem;
@@ -31,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: violet;
+  background-color: rgb(16, 177, 150);
   width: 6vw;
   height: 2rem;
   cursor: pointer;
@@ -44,7 +44,7 @@ body {
   height: 2rem;
 }
 .loja:hover {
-  background-color: rgb(224, 74, 224);
+  background-color: rgb(19, 223, 189);
   color: black;
 }
 .sobre {
@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: violet;
+  background-color: rgb(16, 177, 150);
   width: 6vw;
   height: 2rem;
   cursor: pointer;
@@ -67,7 +67,7 @@ body {
   height: 2rem;
 }
 .sobre:hover {
-  background-color: rgb(224, 74, 224);
+  background-color: rgb(19, 223, 189);
   color: black;
 }
 .titulo {
@@ -76,7 +76,7 @@ body {
   justify-content: flex-start;
   padding-left: 2%;
   font-family: "VT323", monospace;
-  color: rgb(140, 21, 156);
+  color: rgb(21, 102, 156);
   text-shadow: -0.5rem 0rem 0.5rem rgb(0, 0, 0);
 }
 .titulo:hover {
@@ -123,17 +123,13 @@ body {
   background-color: red;
   height: 100vh;
 }
+
 main {
-  background-color: rgba(134, 38, 130, 0.5);
+  background-color: rgba(18, 170, 56, 0.7);
+  width: 100vw;
+  min-height: 100vh;
 }
-.caixa1 { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: darkblue;
-  width: 30vw;
-  height: 85vh;
-}
+
 #fazerLogin {
   display: none;
   position: fixed;
@@ -197,6 +193,14 @@ main {
 .telaLogin::placeholder {
   color: black;
 }
+.imgLogin {
+  width: 11rem;
+  transition: 1s;
+}
+.imgLogin:hover {
+  scale: 1.1;
+  transform: rotateY(360deg);
+}
 .cadastro {
   font-size: 1.9rem;
   width: 12rem;
@@ -216,7 +220,7 @@ main {
   right: 10%; 
   top: calc(3rem + 4vw); 
   top: 3%;
-  background-color: violet;
+  background-color: rgb(16, 177, 150);
   width: 8vw; 
   height: 2rem;
   cursor: pointer;
@@ -225,7 +229,7 @@ main {
   color: rgb(219, 218, 218);
 }
 .entrar:hover {
-  background-color: rgb(224, 74, 224);
+  background-color: rgb(19, 223, 189);
   color: black;
 }
 .botaoEntrar {
@@ -254,10 +258,18 @@ main {
   text-decoration: none;
   color: black;
 }
+.caixaInicial {
+  background-color: #270066;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
 
-
-
-
+.caixaInicial h1 {
+  color: rgb(173, 152, 152);
+  font-size: 3rem;
+}
 
 
 
