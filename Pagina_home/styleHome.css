@@ -11,10 +11,12 @@ html {
   overflow-x: hidden;
 }
 header {
-  background-color: rgba(18, 170, 56, 0.7);
+  /* background-color: rgba(18, 170, 56, 0.7); */
+  background-color: rgb(147, 204, 163);
   width: 100vw;
   height: 10vh;
   font-size: 2rem;
+  border-bottom: 2px dashed rgb(187, 41, 138);
 }
 body {
   position: relative;
@@ -71,12 +73,13 @@ body {
   color: black;
 }
 .titulo {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-left: 2%;
   font-family: "VT323", monospace;
-  color: rgb(21, 102, 156);
+  color: rgb(187, 41, 138);
   text-shadow: -0.5rem 0rem 0.5rem rgb(0, 0, 0);
 }
 .titulo:hover {
@@ -125,7 +128,7 @@ body {
 }
 
 main {
-  background-color: rgba(18, 170, 56, 0.7);
+  background-color: rgb(147, 204, 163);
   width: 100vw;
   min-height: 100vh;
 }
@@ -259,16 +262,26 @@ main {
   color: black;
 }
 .caixaInicial {
-  background-color: #270066;
+  background-color: rgb(162, 189, 9);
   width: 100vw;
   height: 50vh;
   display: flex;
-  justify-content: center;
-}
+  /* justify-content: center; */
+  align-items: center;
+  border-bottom: 2px dashed rgb(187, 41, 138);
+  flex-direction: column;
 
+}
 .caixaInicial h1 {
-  color: rgb(173, 152, 152);
+  color: rgb(187, 41, 138);
   font-size: 3rem;
+}
+.imgGatoEspaço {
+  flex-wrap: wrap;
+  width: 20%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -276,18 +289,29 @@ main {
 
 footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-size: 2rem;
-  background-color: rgba(134, 38, 130, 0.5);
+  background-color: rgb(147, 204, 163);
   width: 100%;
   min-height: 10rem; 
   flex-shrink: 0; /* Impede que o footer seja reduzido a ponto de ficar ilegível */
   color: rgb(0, 0, 0);
+  border-top: 2px dashed rgb(187, 41, 138);
 }
 
 footer p {
-  padding-top: 5rem; 
+  margin-top: 1rem;
+  padding-top: 0.2rem; 
   margin-bottom: 0; 
-  margin-right: 1rem;
   margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.imgsFooter{
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+}
+.imgsFooter img{
+  width: 3rem;
 }
